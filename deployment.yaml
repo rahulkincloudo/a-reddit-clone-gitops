@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reddit-clone-app:reddit-clone-pipeline:1.0.0-9
+      app: reddit-clone-app
   template:
     metadata:
       labels:
-        app: reddit-clone-app:reddit-clone-pipeline:1.0.0-9
+        app: reddit-clone-app
     spec:
       containers:
-        - name: reddit-clone-app:reddit-clone-pipeline:1.0.0-9
-          image: iamrsk/reddit-clone-pipeline:1.0.0-9 #update with the latest image
+        - name: reddit-clone-app
+          image: iamrsk/reddit-clone-pipeline:1.0.0-10 #update with the latest image
           resources:
             limits:
               cpu: "1"
